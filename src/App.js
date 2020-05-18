@@ -12,7 +12,11 @@ class App extends React.Component {
     return (
       <div>
         hello
-        <SimpleMap lat={this.state.lat} lag={this.state.lag} />
+        <SimpleMap
+          key={this.state.lag}
+          lat={this.state.lat}
+          lag={this.state.lag}
+        />
       </div>
     );
   }
